@@ -1,16 +1,24 @@
 <template>
   <div id="app">
-    <Todos />
+      <AddTodo/> 
+      <FilterTodos />
+      <Todos />
+      <lista-cidades />
   </div>
 </template>
 
 <script>
 import Todos from './components/Todos.vue'
-
+import AddTodo from './components/AddTodo.vue'
+import FilterTodos from './components/FilterTodos.vue'
+import ListaCidades from './components/ListaCidades'
 export default {
   name: 'app',
   components: {
-   Todos
+   Todos,
+   AddTodo,
+   FilterTodos,
+   'lista-cidades': ListaCidades
   }
 }
 </script>
