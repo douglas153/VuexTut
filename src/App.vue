@@ -4,6 +4,7 @@
       <FilterTodos />
       <Todos />
       <lista-cidades />
+      <product-list />
   </div>
 </template>
 
@@ -12,13 +13,15 @@ import Todos from './components/Todos.vue'
 import AddTodo from './components/AddTodo.vue'
 import FilterTodos from './components/FilterTodos.vue'
 import ListaCidades from './components/ListaCidades'
+import ProductList from './components/ProductList'
 export default {
   name: 'app',
   components: {
    Todos,
    AddTodo,
    FilterTodos,
-   'lista-cidades': ListaCidades
+   'lista-cidades': ListaCidades,
+   'product-list': ProductList
   }
 }
 </script>
