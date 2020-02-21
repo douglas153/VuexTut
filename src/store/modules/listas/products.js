@@ -4,7 +4,7 @@ export default {
     namespaced: true, 
 
     state: {
-        products: []
+        products: {}
     },
     getters: {
         allProducts: (state) => state.products
@@ -12,7 +12,7 @@ export default {
     actions: {
         //get the product list 
         async fetchProducts({ commit }){
-            const response = await axios.get('http://localhost:3000/products')
+            const response = await axios.get('http://localhost:3000/products/')
             commit("setProducts", response.data);
         }
     }, 

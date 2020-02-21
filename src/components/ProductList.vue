@@ -3,7 +3,7 @@
         <h3>Products</h3>
         <div>
             <ul v-for="(product, i) in allProducts" :key="i">
-                <li>{{product.name}}</li>
+                <li>{{product.products.name}}</li>
             </ul>
         </div>
     </div>
